@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ldf-zc-uzf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3td-m9-w61">
+            <objects>
+                <navigationController id="Ldf-zc-uzf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mLq-kj-uoe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dPK-aN-5KH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw0-HX-mfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584" y="-40"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="QUIZO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quiz" translatesAutoresizingMaskIntoConstraints="NO" id="ka8-gu-EIp">
+                                <rect key="frame" x="16" y="196" width="361" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq4-sa-esC">
+                                <rect key="frame" x="133" y="718" width="127" height="62"/>
+                                <color key="tintColor" red="0.71372550729999995" green="0.1843137443" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PLAY">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OzT-Sn-73O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jq4-sa-esC" secondAttribute="trailing" constant="133" id="1g3-Oc-YNa"/>
+                            <constraint firstItem="ka8-gu-EIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AOn-Ll-lbE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ka8-gu-EIp" secondAttribute="trailing" constant="16" id="QG5-Vy-Xe2"/>
+                            <constraint firstItem="ka8-gu-EIp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="XxT-w5-mb6"/>
+                            <constraint firstItem="jq4-sa-esC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="olc-Cg-mZ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jq4-sa-esC" secondAttribute="bottom" constant="38" id="tmq-W2-DTv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T7C-Wr-hwc"/>
+                    <connections>
+                        <outlet property="Quiztime" destination="ka8-gu-EIp" id="4Aq-vU-kLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194.6564885496183" y="-29.577464788732396"/>
+        </scene>
+        <!--Secondpage View Controller-->
+        <scene sceneID="s7Z-gC-XdD">
+            <objects>
+                <viewController storyboardIdentifier="secondpageViewController" id="7Qo-RB-BRb" customClass="SecondpageViewController" customModule="QUIZO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uof-V9-B9a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vU-cI-Ucp">
+                                <rect key="frame" x="10" y="79" width="373" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gn9-AR-B2w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EYl-4J-JQC">
+                                <rect key="frame" x="10" y="139" width="373" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listTableViewCell" id="ATt-HW-4QF" customClass="ListTableViewCell" customModule="QUIZO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="44.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ATt-HW-4QF" id="i1y-CB-Agt">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="44.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djn-tl-Bcn">
+                                                    <rect key="frame" x="10" y="11.000000000000002" width="353" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Djn-tl-Bcn" secondAttribute="bottom" constant="11.67" id="3wA-hS-FhA"/>
+                                                <constraint firstItem="Djn-tl-Bcn" firstAttribute="top" secondItem="i1y-CB-Agt" secondAttribute="top" constant="11" id="8LE-1w-8Jl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Djn-tl-Bcn" secondAttribute="trailing" constant="10" id="ZVu-0B-Vco"/>
+                                                <constraint firstItem="Djn-tl-Bcn" firstAttribute="leading" secondItem="i1y-CB-Agt" secondAttribute="leading" constant="10" id="zpI-oF-O50"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="Djn-tl-Bcn" id="ekN-gF-ozI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Qo-RB-BRb" id="gdO-if-WlV"/>
+                                    <outlet property="delegate" destination="7Qo-RB-BRb" id="dz4-V2-J3E"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQT-9b-3mA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PQT-9b-3mA" firstAttribute="trailing" secondItem="EYl-4J-JQC" secondAttribute="trailing" constant="10" id="1Qf-eS-Vkn"/>
+                            <constraint firstItem="EYl-4J-JQC" firstAttribute="leading" secondItem="PQT-9b-3mA" secondAttribute="leading" constant="10" id="Cgq-QO-7ER"/>
+                            <constraint firstItem="5vU-cI-Ucp" firstAttribute="leading" secondItem="PQT-9b-3mA" secondAttribute="leading" constant="10" id="E1j-2f-Dgz"/>
+                            <constraint firstItem="EYl-4J-JQC" firstAttribute="top" secondItem="5vU-cI-Ucp" secondAttribute="bottom" constant="10" id="EPQ-6V-kzr"/>
+                            <constraint firstItem="PQT-9b-3mA" firstAttribute="bottom" secondItem="EYl-4J-JQC" secondAttribute="bottom" constant="10" id="RU4-3o-B2l"/>
+                            <constraint firstItem="5vU-cI-Ucp" firstAttribute="top" secondItem="PQT-9b-3mA" secondAttribute="top" constant="20" id="bRQ-Gu-RTk"/>
+                            <constraint firstItem="PQT-9b-3mA" firstAttribute="trailing" secondItem="5vU-cI-Ucp" secondAttribute="trailing" constant="10" id="coJ-Jm-gsd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="5vU-cI-Ucp" id="rFM-oy-Ucg"/>
+                        <outlet property="table" destination="EYl-4J-JQC" id="S9t-lW-o1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4j-NI-GwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.030534351145" y="-13.380281690140846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="quiz" width="893" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
